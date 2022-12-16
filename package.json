@@ -4,8 +4,8 @@
   "description": "A sanity check that tybalt is working",
   "main": "index.js",
   "scripts": {
-    "build": "tybalt build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tybalt build src/index.ts",
+    "test": "tybalt test"
   },
   "repository": {
     "type": "git",
@@ -19,11 +19,11 @@
   },
   "homepage": "https://github.com/doug-wade/tybalt-client#readme",
   "dependencies": {
-    "@tybalt/core": "^0.0.4",
-    "@tybalt/validator": "^0.0.4"
+    "@tybalt/core": "^0.0.5",
+    "@tybalt/validator": "^0.0.5"
   },
   "devDependencies": {
-    "@tybalt/cli": "^0.0.4",
-    "@tybalt/test-utils": "^0.0.4"
+    "@tybalt/cli": "^0.0.5",
+    "@tybalt/test-utils": "^0.0.5"
   }
 }
