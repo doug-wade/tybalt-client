@@ -1,0 +1,5 @@
+.tc-circle {
+    border-radius: 50%;
+    background-color: rebeccapurple;
+    border: 1px solid red;
+}

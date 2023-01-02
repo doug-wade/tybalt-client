@@ -5,25 +5,30 @@
   "main": "index.js",
   "scripts": {
     "build": "tybalt build src/index.ts",
+    "lint": "eslint src/**/*.ts",
+    "symlink": "npm link ../tybalt/packages/cli ../tybalt/packages/eslint-plugin ../tybalt/packages/test-utils ../tybalt/packages/validator ../tybalt/packages/core .",
     "test": "tybalt test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/doug-wade/tybalt-client.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["tybalt", "web components"],
+  "author": "Douglas Wade <douglas.b.wade@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/doug-wade/tybalt-client/issues"
   },
   "homepage": "https://github.com/doug-wade/tybalt-client#readme",
   "dependencies": {
-    "@tybalt/core": "^0.0.5",
-    "@tybalt/validator": "^0.0.5"
+    "@tybalt/core": "^0.0.8",
+    "@tybalt/validator": "^0.0.8"
   },
   "devDependencies": {
-    "@tybalt/cli": "^0.0.5",
-    "@tybalt/test-utils": "^0.0.5"
+    "@tybalt/cli": "^0.0.8",
+    "@tybalt/eslint-plugin": "^0.0.8",
+    "@tybalt/test-utils": "^0.0.8",
+    "@typescript-eslint/parser": "^5.47.1",
+    "eslint": "^8.31.0"
   }
 }
